@@ -108,6 +108,12 @@ int main(){
 	cout << "2 - Base Binaria   3 - Base Ternaria   8 - Base Octal    10 - Base Decimal     16 - Base Hexadecimal\n";
 	cin >> base1;
 
+    //Testando se as bases inseridas sao validas ou nao
+    while (base1 != 2 && base1 != 3 && base1 != 8 && base1 != 10 && base1 != 16) {
+	cout << "informacao invalida, tente novamente...\n";
+	cin >> base1;
+    }
+
     bool v = false;
 
     //Aqui nesta parte, testamos se o numero inserido na primeira eh valido para a base selecionada:
@@ -167,11 +173,7 @@ int main(){
 
 
 
-    //Testando se as bases inseridas sao validas ou nao
-    while (base1 != 2 && base1 != 3 && base1 != 8 && base1 != 10 && base1 != 16) {
-		cout << "informacao invalida, tente novamente...\n";
-		cin >> base1;
-	}
+    
 
     cout << "Para qual base voce deseja transformar esse numero?: \n";
 	cout << "2 - Base Binaria   3 - Base Ternaria    8 - Base Octal     10 - Base Decimal     16 - Base Hexadecimal\n";
